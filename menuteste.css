@@ -14,7 +14,7 @@
 .menu-item {
     cursor: pointer;
     font-size: 20px;
-    color: #5c5b9c;
+    color: yellow;
 }
 
 .menu-item:hover {
