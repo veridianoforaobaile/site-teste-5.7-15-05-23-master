@@ -8,10 +8,12 @@
     <link rel="stylesheet" type="text/css" href="estilo entrar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="icon" href="img/disquete gif.gif"gif>
-    <link rel="stylesheet" type="text/css" href="menu.css">
-    <link rel="stylesheet" type="text/js" href="menu.js">
+    <link rel="stylesheet" type="text/css" href="menuteste.css">
+    <link rel="stylesheet" type="text/js" href="menuteste.js">
     <link rel="stylesheet" href="./style.css">
-    <link href="https://fonts.cdnfonts.com/css/common-pixel" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/aux-dotbitc" rel="stylesheet">
+                
+                
     <style>
     .caixa_larga
     {
@@ -29,7 +31,38 @@
     .pulha:hover{
         background-color: #826ec6;
     }
+    #menu {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #f2e5fc;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-around;
+            z-index: 1;
+        }
 
+        .menu-item {
+            cursor: pointer;
+            font-size: 20px;
+            color: #5c5b9c;
+            font-family: 'SpaceType', sans-serif;
+        }
+
+        .menu-item:hover {
+            border-bottom: 2px solid black;
+        }
+
+        .menu-image {
+            position: fixed;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            cursor: pointer;
+            z-index: 2;
+        } 
 
   
     </style>
@@ -43,13 +76,16 @@
 
 
     <div class="titulo">
-        <img src="img/titulo.png" alt="150px">
-    </div>
+        <a href="FLOPPY ARCH.html">
+          <img src="img/titulo.png" alt="Título">
+        </a>
+      </div>
+      
 
 
 
 <div class="d0" style="display: flex; justify-content: space-between; flex-direction: column; align-items: center;">
-    <fieldset style="text-align: center; font-size: 36px;font-family: 'Common Pixel', sans-serif; color: yellow;">
+    <fieldset style="text-align: center; font-size: 36px;font-family: 'AuX DotBitC Xtra SmallCaps', sans-serif; color: yellow;">
 
         Nome:<input type="text" minlength="5" maxlength="16" style="display:block; margin: 0 auto;width: 300px;height: 25px;" class="caixa_larga" id="nome" >
         <br> <br>
@@ -61,24 +97,23 @@
 
         </a>
     </button>
-    <button class="pulha" style="display: block; margin: 0 auto;font-size: 36px; height: 50px;width: 260px; font-family: 'Common Pixel', sans-serif; color: yellow;">
+    <button class="pulha" style="display: block; margin: 0 auto;font-size: 36px; height: 50px;width: 260px; font-family: 'SpaceType', sans-serif; color: yellow;">
         <a href="FLOPPY ARCH entrar.html" style="display: block; height: 100%; width: 100%; text-decoration: none; color: inherit;">
             Confirmar
         </a>
     </button>
 </div>
    
-        <nav>
-            <a href="FLOPPY ARCH.html">Home</a>
-            <a href="FLOPPY ARCH comprar.html">Comprar</a>
-            <a href="FLOPPY ARCH carrinho.html">Carrinho</a>
-            <a href="FLOPPY ARCH entrar.html">Entrar</a>
-            <a href="FLOPPY ARCH contato.html">Contato</a>
-            <a href="FLOPPY ARCH Fale conosco.html">Fale conosco </a>
-            <div class="animation start-home"></div>
-        </nav>
-   
-        <div class="disc"> 
-            <img src="img/disquete gif.gif" class="disquete" >
-            <img src="img/disquete gif.gif" class="disquete2">  
-        </div>
+<img src="img/disquete gif.gif" alt="Menu" id="menu-botao" class="menu-image">
+
+<ul id="menu">
+    <li class="menu-item"><a href="FLOPPY ARCH comprar.html">comprar</a></li>
+    <li class="menu-item"><a href="FLOPPY ARCH carrinho.html">carrinho</a></li>
+    <li class="menu-item"><a href="FLOPPY ARCH entrar.html">entrar</a></li>
+    <li class="menu-item"><a href="FLOPPY ARCH contato.html">contato</a></li>
+  </ul>
+  
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="menuteste.js"></script>
+</html>   
