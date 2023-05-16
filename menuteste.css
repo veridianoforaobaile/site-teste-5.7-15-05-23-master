@@ -1,0 +1,35 @@
+#menu {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(#5c5b9c);
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.menu-item {
+    cursor: pointer;
+    font-size: 20px;
+    color: yellow;
+}
+
+.menu-item:hover {
+    border-bottom: 2px solid black;
+}
+
+.menu-image {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    z-index: 2;
+	width: 100px;
+	height: 100px;
+	top: 89%;
+	left: 49%;
+}
