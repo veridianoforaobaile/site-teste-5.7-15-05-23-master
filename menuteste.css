@@ -4,7 +4,7 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: rgb(#5c5b9c);
+    background-color: rgb(yellow);
     padding: 10px 0;
     display: flex;
     justify-content: space-between;
@@ -14,7 +14,7 @@
 .menu-item {
     cursor: pointer;
     font-size: 20px;
-    color: yellow;
+    color: #5c5b9c;
 }
 
 .menu-item:hover {
